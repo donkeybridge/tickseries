@@ -134,7 +134,7 @@ module TickSeries
 
   # TimeSeries::Series is the second part of the module. It contains a single measurement ("Messpunkt") of the series. 
   class Tick
-    attr_reader :t, :p, :v, :k
+    attr_reader :t, :m, :v, :p
 
     # The constructor is build as flexible as I was able to. It accepts 
     # * a Hash containing < :t | :time | :timestamp > with an integer or string value required in seconds or milliseconds

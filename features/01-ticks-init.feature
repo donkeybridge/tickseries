@@ -6,8 +6,8 @@ Feature: Initialization of Tick
     When creating a tick with '<params>' it should result in <timestamp> and <price>
     Examples:
       | params                                 | timestamp     |  price  | 
-      | {s: :foo, t: 1555767235, p: 123 }      | 1555767235000 |  123.0  | 
-      | {s: "foo", t: 1555767235123, p: 1.21 } | 1555767235123 |    1.21 | 
+      | {s: :foo, t: 1555767235, m: 123 }      | 1555767235000 |  123.0  | 
+      | {s: "foo", t: 1555767235123, m: 1.21 } | 1555767235123 |    1.21 | 
       | ["foo",  "1555767235", "225" ]         | 1555767235000 |  225.0  | 
       | :foo, 1555767235, 225                  | 1555767235000 |  225.0  |
       | 1555767235, 225                        | 1555767235000 |  225.0  |
