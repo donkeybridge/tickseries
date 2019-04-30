@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = "tickseries"
-  s.version     = "0.1.1alpha"
-  s.date        = "2019-04-20"
+  s.version     = "0.1.2alpha"
+  s.date        = "2019-04-21"
   s.summary     = "Ruby Module providing TickSeries::Tick and TickSeries::Series"
   s.description = "Ruby Module providing TickSeries::Tick and TickSeries::Series "
   s.authors     = [ "Benjamin L. Tischendorf" ]

@@ -134,7 +134,7 @@ module TickSeries
 
   # TimeSeries::Series is the second part of the module. It contains a single measurement ("Messpunkt") of the series. 
   class Tick
-    attr_reader :t, :m, :v, :p
+    attr_reader :t, :m0, :m1, :m2, m:3
 
     # The constructor is build as flexible as I was able to. It accepts 
     # * a Hash containing < :t | :time | :timestamp > with an integer or string value required in seconds or milliseconds
@@ -154,9 +154,10 @@ module TickSeries
           timestamp = Integer(args[1])
         end
         opts = {t: timestamp, 
-                m: args[prefix + 1], 
-                v: args[prefix + 2], 
-                p: args[prefix + 3]}
+                m0: args[prefix + 1], 
+                m1: args[prefix + 2], 
+                m2: args[prefix + 3],
+                m3: args[prefix + 4]}
       end
       @t  =  opts[:t] || opts[:time] || opts[:timestamp]
       case @t
